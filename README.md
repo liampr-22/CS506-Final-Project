@@ -20,7 +20,7 @@ Data Modeling:
 For clustering purposes, we can use the k-means algorithm. For exploring correlations and predictive models, various techniques may be useful, such as linear models, logarithmic models, decision trees, and XGBoost. It is also interesting to see if deep learning improves or marginally improves predictive power.
 
 Data Visualization:
-Scatterplots may be useful for bidimensional data between any two variables, whereas heatmaps of the country could be useful for clustering.
+Scatterplots may be useful for bidimensional data between any two variables, whereas heatmaps of the country could be useful for clustering. We can also create box plots that show the percentage of illnesses predicted to be caused by food insecurity, as determined by our model.
 
 Test plan:
 For predictive models, we will withhold 20% of the data via a random train/test split. This is to validate model generalization to unseen locations. We may also use stratified sampling so the test set contains representative examples of each county. 
