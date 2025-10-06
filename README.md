@@ -5,10 +5,12 @@ We will analyze county-level patterns of food insecurity and chronic disease dat
 Goal:
 - Using clustering techniques to identify vulnerable communities in America, as well as areas with similar food access and health profiles
 - Predictive modeling for short-term future trends on insecurity within major clusters
+Additional Goals if time permits:
 - Exploring and interpreting any correlations between food insecurity and chronic illness, and testing if the relationship is valid after controlling for covariates
+  - In order to predict health outcomes such as diabetes and heart conditions, we will use poverty rate, limited food access, income, urbanicity, and similar columns
 
 Data Collection:
-Collecting data from the sources below, potentially grouping by county (Request needed for Feeding America dataset)
+Collecting data from the sources below, ranging from 2015/16 to 2019, potentially grouping by county (Request needed for Feeding America dataset)
 - https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data
 - https://www.cdc.gov/places/tools/data-portal.html
 - https://www.feedingamerica.org/research/map-the-meal-gap/by-county
