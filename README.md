@@ -1,4 +1,4 @@
-# CS506 Final — Food Insecurity & Chronic Disease (Midterm Report)
+# CS506 Project — Food Insecurity & Chronic Disease (Midterm Report)
 
 **YouTube Presentation:** link
 
