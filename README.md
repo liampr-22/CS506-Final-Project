@@ -54,7 +54,10 @@ We implemented predictive models for both causal links:
 All models were trained on 80% of the data and evaluated on 20% held-out data. Features were standardized, and principal component analysis was used to reduce dimensionality and capture 95% of variance before modeling.
 
 ### Clustering
-
+- Singular Value Decomposition (SVD) was applied to USDA structural data to identify key predictors of food insecurity.
+- Census tract-level data were processed using share-based metrics to avoid population bias and standardized for comparability.
+- Top features from SVD were correlated with food insecurity rates to understand which structural factors (e.g., low-income tracts, SNAP participation, poverty rate) are most strongly associated with food insecurity.
+- Insights from this clustering analysis highlighted that poverty and low-income status consistently predict food insecurity, while low access metrics provide moderate explanatory power. These findings support the importance of targeting low-income areas and improving food access.
 
 ## 6. Preliminary results
 ### Predictive Models
@@ -65,6 +68,9 @@ Random Forest was the strongest model, explaining ~77% of variance. Linear regre
 Random Forest again performed best (~64% R²), capturing nonlinear relationships between food insecurity and chronic illness. Linear regression explained ~55% of variance.
 
 ### Clusters
+- Structural features identified by SVD (e.g., low-income population, poverty rate, SNAP participation) are consistently correlated with food insecurity.
+- These results suggest that interventions addressing low-income areas and improving access may reduce food insecurity.
+- Clustering/feature selection complements predictive modeling by identifying the most influential structural predictors.
 
 ## 7. Next steps
 - Refine models with hyperparameter tuning to improve performance
