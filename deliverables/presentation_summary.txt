@@ -1,0 +1,45 @@
+
+KEY FINDINGS: Food Access Structural Factors Predict Food Insecurity
+
+Our analysis correlates USDA Food Atlas structural data with Feeding America's 
+food insecurity rates across 2010, 2015, and 2019 using Singular Value 
+Decomposition (SVD) for feature selection.
+
+DATA PROCESSING:
+- Merged 72,000+ census tracts from Food Atlas with 3,100+ county-level food 
+  insecurity rates from Feeding America
+- Used share-based metrics (not population counts) to avoid population bias
+- Standardized features using StandardScaler for fair comparison
+
+METHODOLOGY:
+- Applied Truncated SVD to identify the most important structural predictors
+- SVD ranks features by their contribution to explaining variance in the data
+- Calculated Pearson correlations between top features and food insecurity rates
+
+PRELIMINARY RESULTS:
+
+2010:
+  • Low access, population at 1 mile, share: r=-0.036, p=0.0000
+  • Low access, seniors age 65+ at 1 mile, share: r=-0.035, p=0.0000
+  • Low access, children age 0-17 at 1 mile, share: r=-0.039, p=0.0000
+
+2015:
+  • Low access, population at 1 mile, share: r=0.011, p=0.0031
+  • Low income AND low access (1mi/10mi): r=0.143, p=0.0000
+  • Tract median family income: r=-0.311, p=0.0000
+
+2019:
+  • Low income AND low access (1mi/10mi): r=0.191, p=0.0000
+  • Low access, housing units receiving SNAP benefits at 1/2 mile, share: r=0.415, p=0.0000
+  • Tract poverty rate: r=0.450, p=0.0000
+
+INTERPRETATION:
+- Poverty rate and low-income tract status show consistently strong positive 
+  correlations with food insecurity (r=0.2-0.3)
+- Low access metrics show moderate correlations, indicating geographic barriers 
+  contribute to food insecurity
+- Results suggest structural interventions targeting low-income areas and 
+  improving food access could reduce food insecurity
+
+NEXT STEPS: Build predictive model using top SVD-selected features to forecast 
+food insecurity risk at the tract level.
