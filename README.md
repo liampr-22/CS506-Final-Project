@@ -29,7 +29,7 @@ The project started with various years and release for the three aforementioned 
 - USDA Food Access Research Atlas (2015)
 - Feeding America Map the Meal Gap (2015)
 - Feeding America Map the Meal Gap (2017)
-- CDC PLACES 2020 releaseaw datasets
+- CDC PLACES 2020 release
 
 The FIPS code served as the merge key. For the USDA Atlas, which is at the census tract level, FIPS codes were derived from tract codes. Census tract-level features were aggregated to the county level, either using sums or weighted means, to create comparable county-level features for analysis.
 
