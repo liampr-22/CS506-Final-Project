@@ -1,6 +1,6 @@
 # CS506 Project — Food Insecurity & Chronic Disease (Midterm Report)
 
-**YouTube Presentation:** link
+**YouTube Presentation:** https://youtu.be/0fJ-v1Nlck0?si=vP8s3prJR-9ptkD-
 
 ## 1. Project summary
 The goal of this project is to examine how food access relates to food insecurity, and in turn how food insecurity is associated with adverse health outcomes:
