@@ -66,10 +66,12 @@ All models were trained on 80% of the data and evaluated on 20% held-out data. F
 ### Predictive Models
 1. Link 1 (Low Access → Food Insecurity):
 Random Forest was the strongest model, explaining ~77% of variance. Linear regression performed well (~68% R²) but missed some nonlinear patterns. XGBoost achieved similar performance to Random Forest (~76% R²).
+
 ![Link 1 Model R2 Comparison](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/Predictive%20Models/Unknown.png)
 
 3. Link 2 (Food Insecurity → Health Outcomes):
 Random Forest again performed best (~64% R²), capturing nonlinear relationships between food insecurity and chronic illness. Linear regression explained ~55% of variance.
+
 ![Link 2 Model R2 Comparison](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/Predictive%20Models/Unknown-1.png)
 
 ### Clusters
