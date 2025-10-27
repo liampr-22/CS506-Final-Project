@@ -77,7 +77,6 @@ Random Forest again performed best (~64% R²), capturing nonlinear relationships
 ### Clusters
 - Structural features identified by SVD (e.g., low-income population, poverty rate, SNAP participation) are consistently correlated with food insecurity.
 - These results suggest that interventions addressing low-income areas and improving access may reduce food insecurity.
-- Clustering/feature selection complements predictive modeling by identifying the most influential structural predictors.
 
 ## 7. Next steps
 - Refine models with hyperparameter tuning to improve performance
