@@ -1,0 +1,41 @@
+name: cs506
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy=1.26
+  - pandas=2.2
+  - scipy=1.11
+  - scikit-learn=1.3
+  - statsmodels=0.14
+  - matplotlib=3.8
+  - seaborn=0.12
+  - plotly=5.16
+  - jupyterlab=4.3
+  - notebook=7.0
+  - ipywidgets=8.0
+  - geopandas=1.1
+  - shapely=2.0
+  - fiona=1.9
+  - pyproj=3.7
+  - rtree
+  - geoplot
+  - tqdm
+  - requests
+  - sqlalchemy
+  - psycopg2
+  - openpyxl
+  - xlrd
+  - pip:
+    - altair
+    - xarray
+    - zarr
+    - netCDF4
+    - seaborn-image
+    - jupyterlab-git
+    - ipython
+    - black
+    - pre-commit
+    - watermark
