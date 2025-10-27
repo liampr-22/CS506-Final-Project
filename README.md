@@ -41,6 +41,9 @@ This process allowed us to align datasets for modeling while respecting the limi
 During EDA and modeling, several informative figures were produced. These can be found in the `/figures` directory. 
 
 One important visualization was heatmaps of food insecurity rates, food deserts, and chronic illness prevalence. These maps consistently show similar areas affected, particularly in the Deep South/Southeast, suggesting overlap between poor food access, higher food insecurity, and adverse health outcomes. 
+![Food Desert Population Proportions by County](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/EDA/county_food_desert.png)
+![Food Insecurity Rate by County](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/EDA/county_food_insecurity_rate.png)
+![Average Chronic Disease Prevalence by County](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/EDA/county_chronic.png)
 
 ## 5. Modeling Methodology
 
