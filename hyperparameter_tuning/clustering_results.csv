@@ -1,0 +1,4 @@
+Model,Best Parameters,Silhouette Score
+K-Means,k=2,0.523887098877346
+DBSCAN,"{'eps': 0.3, 'min_samples': 3}",0.914858632839023
+Agglomerative,"k=2, complete",0.5999277941208027
