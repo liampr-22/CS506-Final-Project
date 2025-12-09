@@ -1,5 +1,4 @@
-# Hyperparameter Tuning
-
+# Hyperparameter Tuning  
 **Author:** Sharon Kimberly Tope  
 **Component:** Hyperparameter tuning for Link 2 (Food Insecurity → Health Outcomes)
 
@@ -7,29 +6,14 @@
 
 ## Overview
 
-Performs automated hyperparameter tuning for **4 regression models** and **3 clustering algorithms** to improve upon midterm baseline results for predicting health outcomes from food insecurity and socioeconomic factors.
+Performs automated **hyperparameter tuning** for:
+- **Regression models:** Ridge, Lasso, Random Forest, Gradient Boosting  
+- **Clustering models:** K-Means, DBSCAN, Agglomerative  
 
-**Models:** Ridge, Lasso, Random Forest, Gradient Boosting (regression) | K-Means, DBSCAN, Agglomerative (clustering)
+The objective is to improve the **midterm baseline Random Forest R² = 0.64** and identify the most effective models for predicting chronic disease prevalence from food insecurity and socioeconomic data.
 
-**Data:** Link 2 dataset (Food Insecurity → Health Outcomes) from the merged Map the Meal Gap 2017 and CDC PLACES data
-
-**Method:** `GridSearchCV` and `RandomizedSearchCV` with 5-fold cross-validation
-
-**Goal:** Improve upon midterm Random Forest baseline (R² = 0.64) using systematic hyperparameter optimization
-
----
-
-## How to Build and Run
-```powershell
-# Install dependencies
-python -m pip install numpy pandas scikit-learn matplotlib seaborn pytest jupyter
-
-# Run tests
-python -m pytest test_hyperparameter_tuning.py -v
-
-# Run analysis notebook
-jupyter notebook hyperparameter_tuning.ipynb
-```
+**Data:** Link 2 dataset (Map the Meal Gap 2017 × CDC PLACES 2017)  
+**Methods:** `GridSearchCV` and `RandomizedSearchCV` with 5-fold cross-validation  
 
 ---
 
@@ -37,45 +21,46 @@ jupyter notebook hyperparameter_tuning.ipynb
 
 ### Regression Models
 
-| Model | Best Parameters | CV R² | Test R² |
-|-------|----------------|-------|---------|
-| Ridge | `alpha=100`, `solver=auto` | [YOUR_CV_R2] | **[YOUR_TEST_R2]** |
-| Lasso | `alpha=0.1`, `selection=cyclic` | [YOUR_CV_R2] | [YOUR_TEST_R2] |
-| Random Forest | `n_estimators=200`, `max_depth=10` | [YOUR_CV_R2] | [YOUR_TEST_R2] |
-| Gradient Boosting | `n_estimators=200`, `learning_rate=0.05` | [YOUR_CV_R2] | [YOUR_TEST_R2] |
+| Model | CV R² | Test R² |
+|-------|--------|----------|
+| **Ridge** | 0.936884 | 0.935506 |
+| **Lasso** | 0.936861 | 0.935541 |
+| **Random Forest** | 0.910819 | 0.918246 |
+| **Gradient Boosting** | **0.949952** | **0.950816** |
 
-**Best Model:** [Update after running]  
-**Midterm Baseline (no tuning):** 0.64 R²  
-**Improvement:** [Calculate: (best_r2 - 0.64) / 0.64 * 100]%
+**Best Regression Model:** **Gradient Boosting**  
+**Improvement Over Midterm Baseline (0.64 → 0.95):** ~48.6% increase
+
+---
 
 ### Clustering Models
 
 | Model | Best Parameters | Silhouette Score |
-|-------|----------------|------------------|
-| K-Means | `k=[YOUR_K]` | [YOUR_SCORE] |
-| **DBSCAN** | `eps=[YOUR_EPS]`, `min_samples=[YOUR_MIN]` | **[YOUR_SCORE]** |
-| Agglomerative | `k=[YOUR_K]`, `linkage=[YOUR_LINKAGE]` | [YOUR_SCORE] |
+|-------|-----------------|------------------|
+| K-Means | `k=2` | 0.256249 |
+| DBSCAN | `eps=2.0`, `min_samples=3` | -0.167028 |
+| **Agglomerative** | `k=2`, `linkage='complete'` | **0.706458** |
 
-**Best Model:** [Update after running]
+**Best Clustering Model:** **Agglomerative Clustering (Silhouette = 0.706)**  
 
 ---
 
 ## Key Findings
 
-1. **Hyperparameter tuning systematically optimized model performance** - GridSearchCV and RandomizedSearchCV explored parameter spaces to identify optimal configurations for all 7 models.
+1. **Gradient Boosting achieved the strongest predictive performance**, reaching an R² of 0.95 and outperforming all other models by a significant margin. This represents a 48.6% improvement over the midterm baseline.
 
-2. **[Regression/Clustering] achieved best performance** - [Update based on your results: which approach worked better and why]
+2. **Agglomerative clustering revealed meaningful county groupings**, indicating strong geographic and socioeconomic structure in health outcomes. The silhouette score of 0.706 demonstrates well-separated clusters.
 
-3. **Geographic and socioeconomic patterns drive health outcomes** - The model performance demonstrates that food insecurity combined with demographic factors are predictive of chronic disease prevalence, validating the Link 2 analysis in our project's causal chain.
+3. **Food insecurity + socioeconomic variables carry strong predictive signal**, validating the Link 2 causal pathway: *Low Access → Food Insecurity → Health Outcomes.* The model performance demonstrates that these factors are highly predictive of chronic disease prevalence.
+
+4. **Hyperparameter tuning provided major gains** - Systematic optimization using GridSearchCV and RandomizedSearchCV explored parameter spaces to identify optimal configurations, boosting R² from 0.64 (midterm baseline) to 0.95.
 
 ---
 
-## Project Context
+## Summary of Results
 
-This component addresses the "Next Steps" goal from our midterm report: *"Refine models with hyperparameter tuning to improve performance."*
+Hyperparameter tuning significantly improved the predictive performance of all regression models, with Gradient Boosting emerging as the best performer (Test R² = 0.9508), a 48.6% improvement over the midterm baseline Random Forest model (R² = 0.64). Ridge and Lasso also performed strongly (R² ≈ 0.936), while the tuned Random Forest reached R² ≈ 0.918.
 
-**Causal Chain Analyzed:** Low Access → Food Insecurity → **Health Outcomes** (Link 2)
+For clustering, Agglomerative Clustering achieved the highest silhouette score (0.706), revealing clear county-level groupings in health outcomes, while K-Means provided weaker separation and DBSCAN failed to identify meaningful density-based clusters.
 
-**Midterm Baseline:** Random Forest achieved 0.64 R² without hyperparameter tuning.
-
-**Our Contribution:** Systematic hyperparameter optimization across multiple model families to maximize predictive performance for the Link 2 relationship.
+Overall, the results show that food insecurity and socioeconomic factors strongly predict chronic disease prevalence, and that tuning model hyperparameters yields substantial accuracy gains across the board.
