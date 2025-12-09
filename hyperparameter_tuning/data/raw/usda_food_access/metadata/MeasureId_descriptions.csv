@@ -1,0 +1,188 @@
+﻿MeasureId,description,data_scource
+Urban,Urban tract,Food_Atlas
+Pop2010,"Population, tract total",Food_Atlas
+OHU2010,"Housing units, total",Food_Atlas
+GroupQuartersFlag,"Group quarters, tract with high share",Food_Atlas
+NUMGQTRS,"Group quarters, tract population residing in, number",Food_Atlas
+PCTGQTRS,"Group quarters, tract population residing in, share",Food_Atlas
+LILATracts_1And10,Low income and low access tract measured at 1 mile for urban areas and 10 miles for rural areas,Food_Atlas
+LILATracts_halfAnd10,Low income and low access tract measured at 1/2 mile for urban areas and 10 miles for rural areas,Food_Atlas
+LILATracts_1And20,Low income and low access tract measured at 1 mile for urban areas and 20 miles for rural areas,Food_Atlas
+LILATracts_Vehicle,Low income and low access tract using vehicle access or low income and low access tract measured at 20 miles,Food_Atlas
+HUNVFlag,"Vehicle access, tract with low vehicle access",Food_Atlas
+LowIncomeTracts,Low income tract,Food_Atlas
+PovertyRate,Tract poverty rate,Food_Atlas
+MedianFamilyIncome,Tract median family income,Food_Atlas
+LA1and10,Low access tract at 1 mile for urban areas and 10 miles for rural areas,Food_Atlas
+LAhalfand10,Low access tract at 1/2 mile for urban areas and 10 miles for rural areas,Food_Atlas
+LA1and20,Low access tract at 1 mile for urban areas and 20 miles for rural areas,Food_Atlas
+LATracts_half,Low access tract at 1/2 mile,Food_Atlas
+LATracts1,Low access tract at 1 mile,Food_Atlas
+LATracts10,Low access tract at 10 miles,Food_Atlas
+LATracts20,Low access tract at 20 miles,Food_Atlas
+LATractsVehicle_20,Low access tract using vehicle access and at 20 miles  in rural areas,Food_Atlas
+LAPOP1_10,"Low access, population at 1 mile for urban areas and 10 miles for rural areas, number",Food_Atlas
+LAPOP05_10,"Low access, population at 1/2 mile for urban areas and 10 miles for rural areas, number",Food_Atlas
+LAPOP1_20,"Low access, population at 1 mile for urban areas and 20 miles for rural areas, number",Food_Atlas
+LALOWI1_10,"Low access, low-income population at 1 mile for urban areas and 10 miles for rural areas, number",Food_Atlas
+LALOWI05_10,"Low access, low-income population at 1/2 mile for urban areas and 10 miles for rural areas, number",Food_Atlas
+LALOWI1_20,"Low access, low-income population at 1 mile for urban areas and 20 miles for rural areas, number",Food_Atlas
+lapophalf,"Low access, population at 1/2 mile, number",Food_Atlas
+lapophalfshare,"Low access, population at 1/2 mile, share",Food_Atlas
+lalowihalf,"Low access, low-income population at 1/2 mile, number",Food_Atlas
+lalowihalfshare,"Low access, low-income population at 1/2 mile, share",Food_Atlas
+lakidshalf,"Low access, children age 0-17 at 1/2 mile, number",Food_Atlas
+lakidshalfshare,"Low access, children age 0-17 at 1/2 mile, share",Food_Atlas
+laseniorshalf,"Low access, seniors age 65+ at 1/2 mile, number",Food_Atlas
+laseniorshalfshare,"Low access, seniors age 65+ at 1/2 mile, share",Food_Atlas
+lawhitehalf,"Low access, White population at 1/2 mile, number",Food_Atlas
+lawhitehalfshare,"Low access, White population at 1/2 mile, share",Food_Atlas
+lablackhalf,"Low access, Black or African American population at 1/2 mile, number",Food_Atlas
+lablackhalfshare,"Low access, Black or African American population at 1/2 mile, share",Food_Atlas
+laasianhalf,"Low access, Asian population at 1/2 mile, number",Food_Atlas
+laasianhalfshare,"Low access, Asian population at 1/2 mile, share",Food_Atlas
+lanhopihalf,"Low access, Native Hawaiian or Other Pacific Islander population at 1/2 mile, number",Food_Atlas
+lanhopihalfshare,"Low access, Native Hawaiian or Other Pacific Islander population at 1/2 mile, share",Food_Atlas
+laaianhalf,"Low access, American Indian or Alaska Native population at 1/2 mile, number",Food_Atlas
+laaianhalfshare,"Low access, American Indian or Alaska Native population at 1/2 mile, share",Food_Atlas
+laomultirhalf,"Low access, Other/Multiple race population at 1/2 mile, number",Food_Atlas
+laomultirhalfshare,"Low access, Other/Multiple race population at 1/2 mile, share",Food_Atlas
+lahisphalf,"Low access, Hispanic or Latino population at 1/2 mile, number",Food_Atlas
+lahisphalfshare,"Low access, Hispanic or Latino population at 1/2 mile, share",Food_Atlas
+lahunvhalf,"Vehicle access, housing units without and low access at 1/2 mile, number",Food_Atlas
+lahunvhalfshare,"Vehicle access, housing units without and low access at 1/2 mile, share",Food_Atlas
+lasnaphalf,"Low access, housing units receiving SNAP benefits at 1/2 mile, number",Food_Atlas
+lasnaphalfshare,"Low access, housing units receiving SNAP benefits at 1/2 mile, share",Food_Atlas
+lapop1,"Low access, population at 1 mile, number",Food_Atlas
+lapop1share,"Low access, population at 1 mile, share",Food_Atlas
+lalowi1,"Low access, low-income population at 1 mile, number",Food_Atlas
+lalowi1share,"Low access, low-income population at 1 mile, share",Food_Atlas
+lakids1,"Low access, children age 0-17 at 1 mile, number",Food_Atlas
+lakids1share,"Low access, children age 0-17 at 1 mile, share",Food_Atlas
+laseniors1,"Low access, seniors age 65+ at 1 mile, number",Food_Atlas
+laseniors1share,"Low access, seniors age 65+ at 1 mile, share",Food_Atlas
+lawhite1,"Low access, White population at 1 mile, number",Food_Atlas
+lawhite1share,"Low access, White population at 1 mile, share",Food_Atlas
+lablack1,"Low access, Black or African American population at 1 mile, number",Food_Atlas
+lablack1share,"Low access, Black or African American population at 1 mile, share",Food_Atlas
+laasian1,"Low access, Asian population at 1 mile, number",Food_Atlas
+laasian1share,"Low access, Asian population at 1 mile, share",Food_Atlas
+lanhopi1,"Low access, Native Hawaiian and Other Pacific Islander population at 1 mile, number",Food_Atlas
+lanhopi1share,"Low access, Native Hawaiian and Other Pacific Islander population at 1 mile, share",Food_Atlas
+laaian1,"Low access, American Indian and Alaska Native population at 1 mile, number",Food_Atlas
+laaian1share,"Low access, American Indian and Alaska Native population at 1 mile, share",Food_Atlas
+laomultir1,"Low access, Other/Multiple race population at 1 mile, number",Food_Atlas
+laomultir1share,"Low access, Other/Multiple race population at 1 mile, share",Food_Atlas
+lahisp1,"Low access, Hispanic or Latino population at 1 mile, number",Food_Atlas
+lahisp1share,"Low access, Hispanic or Latino population at 1 mile, share",Food_Atlas
+lahunv1,"Vehicle access, housing units without and low access at 1 mile, number",Food_Atlas
+lahunv1share,"Vehicle access, housing units without and low access at 1 mile, share",Food_Atlas
+lasnap1,"Low access, housing units receiving SNAP benefits at 1 mile, number",Food_Atlas
+lasnap1share,"Low access, housing units receiving SNAP benefits at 1 mile, share",Food_Atlas
+lapop10,"Low access, population at 10 miles, number",Food_Atlas
+lapop10share,"Low access, population at 10 miles, share",Food_Atlas
+lalowi10,"Low access, low-income population at 10 miles, number",Food_Atlas
+lalowi10share,"Low access, low-income population at 10 miles, share",Food_Atlas
+lakids10,"Low access, children age 0-17 at 10 miles, number",Food_Atlas
+lakids10share,"Low access, children age 0-17 at 10 miles, share",Food_Atlas
+laseniors10,"Low access, seniors age 65+ at 10 miles, number",Food_Atlas
+laseniors10share,"Low access, seniors age 65+ at 10 miles, share",Food_Atlas
+lawhite10,"Low access, White population at 10 miles, number",Food_Atlas
+lawhite10share,"Low access, White population at 10 miles, share",Food_Atlas
+lablack10,"Low access, Black or African American population at 10 miles, number",Food_Atlas
+lablack10share,"Low access, Black or African American population at 10 miles, share",Food_Atlas
+laasian10,"Low access, Asian population at 10 miles, number",Food_Atlas
+laasian10share,"Low access, Asian population at 10 miles, share",Food_Atlas
+lanhopi10,"Low access, Native Hawaiian and Other Pacific Islander population at 10 miles, number",Food_Atlas
+lanhopi10share,"Low access, Native Hawaiian and Other Pacific Islander population at 10 miles, share",Food_Atlas
+laaian10,"Low access, American Indian and Alaska Native population at 10 miles, number",Food_Atlas
+laaian10share,"Low access, American Indian and Alaska Native population at 10 miles, share",Food_Atlas
+laomultir10,"Low access, Other/Multiple race population at 10 miles, number",Food_Atlas
+laomultir10share,"Low access, Other/Multiple race population at 10 miles, share",Food_Atlas
+lahisp10,"Low access, Hispanic or Latino population at 10 miles, number",Food_Atlas
+lahisp10share,"Low access, Hispanic or Latino population at 10 miles, share",Food_Atlas
+lahunv10,"Vehicle access, housing units without and low access at 10 miles, number",Food_Atlas
+lahunv10share,"Vehicle access, housing units without and low access at 10 miles, share",Food_Atlas
+lasnap10,"Low access, housing units receiving SNAP benefits at 10 miles, number",Food_Atlas
+lasnap10share,"Low access,housing units receiving SNAP benefits at 10 miles, share",Food_Atlas
+lapop20,"Low access, population at 20 miles, number",Food_Atlas
+lapop20share,"Low access, population at 20 miles, share",Food_Atlas
+lalowi20,"Low access, low-income population at 20 miles, number",Food_Atlas
+lalowi20share,"Low access, low-income population at 20 miles, share",Food_Atlas
+lakids20,"Low access, children age 0-17 at 20 miles, number",Food_Atlas
+lakids20share,"Low access, children age 0-17 at 20 miles, share",Food_Atlas
+laseniors20,"Low access, seniors age 65+ at 20 miles, number",Food_Atlas
+laseniors20share,"Low access, seniors age 65+ at 20 miles, share",Food_Atlas
+lawhite20,"Low access, White population at 20 miles, number",Food_Atlas
+lawhite20share,"Low access, White population at 20 miles, share",Food_Atlas
+lablack20,"Low access, Black or African American population at 20 miles, number",Food_Atlas
+lablack20share,"Low access, Black or African American population at 20 miles, share",Food_Atlas
+laasian20,"Low access, Asian population at 20 miles, number",Food_Atlas
+laasian20share,"Low access, Asian population at 20 miles, share",Food_Atlas
+lanhopi20,"Low access, Native Hawaiian and Other Pacific Islander population at 20 miles, number",Food_Atlas
+lanhopi20share,"Low access, Native Hawaiian and Other Pacific Islander population at 20 miles, share",Food_Atlas
+laaian20,"Low access, American Indian and Alaska Native population at 20 miles, number",Food_Atlas
+laaian20share,"Low access, American Indian and Alaska Native population at 20 miles, share",Food_Atlas
+laomultir20,"Low access, Other/Multiple race population at 20 miles, number",Food_Atlas
+laomultir20share,"Low access, Other/Multiple race population at 20 miles, share",Food_Atlas
+lahisp20,"Low access, Hispanic or Latino population at 20 miles, number",Food_Atlas
+lahisp20share,"Low access, Hispanic or Latino population at 20 miles, share",Food_Atlas
+lahunv20,"Vehicle access, housing units without and low access at 20 miles, number",Food_Atlas
+lahunv20share,"Vehicle access, housing units without and low access at 20 miles, share",Food_Atlas
+lasnap20,"Low access, housing units receiving SNAP benefits at 20 miles, number",Food_Atlas
+lasnap20share,"Low access, housing units receiving SNAP benefits at 20 miles, share",Food_Atlas
+TractLOWI,"Tract low-income population, number",Food_Atlas
+TractKids,"Tract children age 0-17, number",Food_Atlas
+TractSeniors,"Tract seniors age 65+, number",Food_Atlas
+TractWhite,"Tract White population, number",Food_Atlas
+TractBlack,"Tract Black or African American population, number",Food_Atlas
+TractAsian,"Tract Asian population, number",Food_Atlas
+TractNHOPI,"Tract Native Hawaiian and Other Pacific Islander population, number",Food_Atlas
+TractAIAN,"Tract American Indian and Alaska Native population, number",Food_Atlas
+TractOMultir,"Tract Other/Multiple race population, number",Food_Atlas
+TractHispanic,"Tract Hispanic or Latino population, number",Food_Atlas
+TractHUNV,"Tract housing units without a vehicle, number",Food_Atlas
+TractSNAP,"Tract housing units receiving SNAP benefits, number",Food_Atlas
+ARTHRITIS,Arthritis among adults,CDC
+BPHIGH,High blood pressure among adults,CDC
+CANCER,Cancer (non-skin) or melanoma among adults,CDC
+CASTHMA,Current asthma among adults,CDC
+CHD,Coronary heart disease among adults,CDC
+COPD,Chronic obstructive pulmonary disease among adults,CDC
+DEPRESSION,Depression among adults,CDC
+DIABETES,Diagnosed diabetes among adults,CDC
+HIGHCHOL,High cholesterol among adults who have ever been screened,CDC
+KIDNEY,Chronic kidney disease among adults aged >=18 years,CDC
+OBESITY,Obesity among adults,CDC
+STROKE,Stroke among adults,CDC
+TEETHLOST,All teeth lost among adults aged >=65 years,CDC
+BINGE,Binge drinking among adults,CDC
+CSMOKING,Current cigarette smoking among adults,CDC
+LPA,No leisure-time physical activity among adults,CDC
+SLEEP,Short sleep duration among adults,CDC
+GHLTH,Fair or poor self-rated health status among adults,CDC
+MHLTH,Frequent mental distress among adults,CDC
+PHLTH,Frequent physical distress among adults,CDC
+ACCESS2,Lack of health insurance among adults aged 18â€“64 years,CDC
+BPMED,Taking medicine to control high blood pressure among adults with high blood pressure,CDC
+CERVICAL,Cervical cancer screening among adult women aged 21â€“65 years,CDC
+CHECKUP,Routine checkup within the past year among adults,CDC
+CHOLSCREEN,Cholesterol screening in the past 5 years among adults,CDC
+COLON_SCREEN,Colorectal cancer screening among adults aged 45â€“75 years,CDC
+COREM,"Older adult men aged >=65 years who are up to date on a core set of clinical preventive services: Flu shot past year, PPV shot ever, Colorectal cancer screening",CDC
+COREW,"Older adult women aged >=65 years who are up to date on a core set of clinical preventive services: Flu shot past year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 years",CDC
+DENTAL,Visited dentist or dental clinic in the past year among adult,CDC
+MAMMOUSE,Mammography use among women aged 50â€“74 years,CDC
+Food Insecurity Rate,Food Insecurity Rate,Feeding_America
+# of Food Insecure Persons,# of Food Insecure Persons,Feeding_America
+Low Threshold in state,Low Threshold in state,Feeding_America
+Low Threshold Type,Low Threshold Type,Feeding_America
+High Threshold in state,High Threshold in state,Feeding_America
+High Threshold Type,High Threshold Type,Feeding_America
+% FI ≤ Low Threshold,% FI ≤ Low Threshold,Feeding_America
+% FI Btwn Thresholds,% FI Btwn Thresholds,Feeding_America
+% FI > High Threshold,% FI > High Threshold,Feeding_America
+2017 Child Food Insecurity Rate,2017 Child Food Insecurity Rate,Feeding_America
+# of Food Insecure Children,# of Food Insecure Children,Feeding_America
+% food insecure children in HH w/ HH incomes below 185 FPL,% food insecure children in HH w/ HH incomes below 185 FPL,Feeding_America
+% food insecure children in HH w/ HH incomes above 185 FPL,% food insecure children in HH w/ HH incomes above 185 FPL,Feeding_America
