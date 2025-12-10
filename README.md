@@ -56,6 +56,18 @@ We implemented predictive models for both causal links:
 
 All models were trained on 80% of the data and evaluated on 20% held-out data. Features were standardized, and principal component analysis was used to reduce dimensionality and capture 95% of variance before modeling.
 
+### Feature Selection
+Relevant features were selected using Recursive Feature Elimination with Cross-Validation (RFECV) with our best-performing model, the Random Forest. In Link 1, this process reduced the feature set from the original 144 variables to 46. In Link 2, however, feature reduction did not yield performance improvements and was therefore deemed unnecessary.
+
+<img src="https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/feature_selection/RFECV_link1.png?raw=true" height="200" />
+<img src="https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/feature_selection/RFECV_link2.png?raw=true" height="200" />
+
+### Feature Importance
+Feature importance was determined using the internal scoring mechanism of the Random Forest model. The top-scoring features for each link are presented below.
+
+<img src="https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/feature_selection/feature_importances_link1.png?raw=true" height="200" />
+<img src="https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/feature_selection/feature_importances_link2.png?raw=true" height="200" />
+
 ### Clustering
 - Singular Value Decomposition (SVD) was applied to USDA structural data to identify key predictors of food insecurity. Distinct clusters were not formed using this method, so we opted to use t-SNE, which did form distinct globular clusters better suited for forming organized groupings of county-level data.
 - Census tract-level data were processed using share-based metrics to avoid population bias and standardized for comparability.
