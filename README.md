@@ -57,10 +57,12 @@ We implemented predictive models for both causal links:
 All models were trained on 80% of the data and evaluated on 20% held-out data. Features were standardized, and principal component analysis was used to reduce dimensionality and capture 95% of variance before modeling.
 
 ### Clustering
-- Singular Value Decomposition (SVD) was applied to USDA structural data to identify key predictors of food insecurity.
+- Singular Value Decomposition (SVD) was applied to USDA structural data to identify key predictors of food insecurity. Distinct clusters were not formed using this method, so we opted to use t-SNE, which did form distinct globular clusters better suited for forming organized groupings of county-level data.
 - Census tract-level data were processed using share-based metrics to avoid population bias and standardized for comparability.
-- Top features from SVD were correlated with food insecurity rates to understand which structural factors (e.g., low-income tracts, SNAP participation, poverty rate) are most strongly associated with food insecurity.
-- Insights from this clustering analysis highlighted that poverty and low-income status consistently predict food insecurity, while low access metrics provide moderate explanatory power. These findings support the importance of targeting low-income areas and improving food access.
+- Used three different clustering algorithms: Kmeans, Agglomerative, and Gaussian Mixture Model, with adjusted rand index (ARI) and disagreement distance (Hamming distance) calculated between each to determine which was best for capturing broad trends in the data. GMM and Kmeans had the most concordance between them.
+- Unsurprisingly, features which correlated the most with the target variable (food insecurity for link 1, chronic illness for link 2) were most deterministic for cluster assignment. Clusters were most stratified by poverty rate and 
+- Insights from this clustering analysis highlighted that poverty and low-income status consistently predict food insecurity, while low access metrics provide moderate explanatory power. These findings support the importance of targeting low-income areas and improving food access. Groupings of counties identified via clustering analysis can be monitored accordingly.
+- Notably, there was not adequate overlap between Link1 and Link2 clusters when comparing FIPS. This may suggest that the number of clusters (10) which was chosen to capture the data may stratify the data to an extent that minimizes the connection between different clusterings, i.e. each clustering is too overfit to the specific features it captures to be comparable to clusters capturing different, but related features. Our analysis overall demonstrated a strong association between the respective features.
 
 ## 6. Preliminary results
 ### Predictive Models
@@ -75,7 +77,7 @@ Random Forest again performed best (~64% R²), capturing nonlinear relationships
 ![Link 2 Model R2 Comparison](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/Predictive%20Models/Unknown-1.png)
 
 ### Clusters
-- Structural features identified by SVD (e.g., low-income population, poverty rate, SNAP participation) are consistently correlated with food insecurity.
+- Structural features identified by t-SNE (e.g., low-income population, poverty rate, SNAP participation) are consistently correlated with food insecurity.
 - These results suggest that interventions addressing low-income areas and improving access may reduce food insecurity.
 
 ## 7. Next steps
