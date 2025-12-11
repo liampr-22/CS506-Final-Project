@@ -114,7 +114,7 @@ The disparity computation was implemented as follows:
 3. **Visualization:**  
    Bar plots were used to display DI across demographic groups, with a reference line at DI = 1 to highlight proportional representation. This approach enabled easy comparison of disparities in urban versus rural contexts.  
 
-![Chart](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/Disparity%20/Graphs.png)
+![Chart](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/Unknown.png)
 
 #### **Key Findings**
 
