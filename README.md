@@ -93,8 +93,11 @@ Random Forest again performed best (~64% R²), capturing nonlinear relationships
 - Structural features identified by t-SNE (e.g., low-income population, poverty rate, SNAP participation) are consistently correlated with food insecurity.
 - These results suggest that interventions addressing low-income areas and improving access may reduce food insecurity.
 
-## 7. Next steps
-- Refine models with hyperparameter tuning to improve performance
-- Conduct subgroup analyses (e.g., children, seniors, racial groups)
-- Address temporal mismatches in datasets for more accurate interpretations
-- Explore feature importance for interpretability
+## Conclusions
+- Chronic diseases and food insecurity are closely linked, influenced by complex factors such as poverty and structural disparities. 
+- Through modeling, we can identify high-risk subpopulations with unmet needs and better target interventions.
+
+## Future Directions
+- Extend the analysis to more recent years and evaluate longitudinal trends.
+- Examine specific chronic illnesses in greater detail.
+Incorporate additional datasets to broaden the scope and robustness of the analysis.
