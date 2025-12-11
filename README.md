@@ -68,13 +68,72 @@ This process allowed us to align datasets for modeling while respecting the limi
 1. link1.csv (merged MMG and Atlas)
 2. link2.csv (merged MMG and PLACES)
 
-## 4. Preliminary visualizations
+## 4. EDA
+### **Heatmaps**
 During EDA and modeling, several informative figures were produced. These can be found in the `/figures` directory. 
 
 One important visualization was heatmaps of food insecurity rates, food deserts, and chronic illness prevalence. These maps consistently show similar areas affected, particularly in the Deep South/Southeast, suggesting overlap between poor food access, higher food insecurity, and adverse health outcomes. 
 ![Food Desert Population Proportions by County](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/EDA/county_food_desert.png)
 ![Food Insecurity Rate by County](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/EDA/county_food_insecurity_rate.png)
 ![Average Chronic Disease Prevalence by County](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/EDA/county_chronic.png)
+
+### **Exploring Demographic Disparities in Food Access**
+
+As part of our exploratory data analysis (EDA), we investigated how food access varies across demographic groups using the **USDA Food Access Research Atlas**. Specifically, we focused on disparities among children, seniors, racial and ethnic groups, households without vehicles, and SNAP participants.  
+
+#### **Methodology: Computing the Disparity Index**
+
+To quantify these inequities, we computed a **Disparity Index (DI)**, which compares a group’s proportion of the **low-access population** to their proportion of the **overall population**. Mathematically:
+
+Disparity Index = <sup>Group Share of Low-Access Population</sup>&frasl;<sub>Group Share of Total Population</sub>
+
+- **DI > 1:** The group is disproportionately affected by low food access.  
+- **DI = 1:** The group is proportionally represented.  
+- **DI < 1:** The group is underrepresented in low-access areas.
+
+For example, if a group comprises 10% of the total population but accounts for 20% of the low-access population, the DI = 2. This indicates the group is **twice as likely** to live in a low-access area.
+
+#### **Implementation Details**
+
+The disparity computation was implemented as follows:
+
+1. **Disparity Calculation Function:**  
+   A helper function was defined to compute the DI for each demographic group at various distance thresholds.  
+
+   Key steps include:  
+   - Iterating through each demographic group.  
+   - Summing the total number of people in the low-access population for that group.  
+   - Summing the total population for that group.  
+   - Calculating the group’s proportion in the low-access population and in the overall population.  
+   - Computing the DI as the ratio of low-access share to population share.  
+   - Returning a sorted table with results across all groups.
+
+2. **Threshold Aggregation:**  
+   Disparities were calculated for multiple thresholds and combined into a single table. Results were separated into **urban thresholds** and **rural thresholds** for visualization purposes.
+
+3. **Visualization:**  
+   Bar plots were used to display DI across demographic groups, with a reference line at DI = 1 to highlight proportional representation. This approach enabled easy comparison of disparities in urban versus rural contexts.  
+
+![Chart](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/Disparity%20/Graphs.png)
+
+#### **Key Findings**
+
+The analysis revealed notable structural inequities:
+
+- **Native American populations in rural areas** had the highest disparity indices, up to **25 times higher** than the general population.  
+- **Asian populations in rural areas** were underrepresented in low-access categories.  
+- Other disproportionately affected groups included children, seniors, Black and Hispanic populations, and households without vehicles.  
+
+These results suggest that **geographic proximity alone does not fully explain food access disparities**; demographic and socioeconomic factors compound challenges in certain communities.
+
+#### **Limitations and Considerations**
+
+- The disparity analysis is **threshold-specific**, so changing the definition of low access can alter results.  
+- Downstream modeling could not incorporate these tract-level demographic factors because the corresponding datasets lacked consistent demographic granularity.  
+- Future work could improve the model by **collecting consistent demographic data** across all datasets and adjusting for these disparities in predictive modeling.  
+
+Overall, the disparity index provides a **quantitative, interpretable measure** to identify groups most vulnerable to low food access and informs targeted policy interventions.
+
 
 ## 5. Modeling Methodology
 
