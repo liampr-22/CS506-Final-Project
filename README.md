@@ -85,9 +85,7 @@ As part of our exploratory data analysis (EDA), we investigated how food access 
 
 To quantify these inequities, we computed a **Disparity Index (DI)**, which compares a group’s proportion of the **low-access population** to their proportion of the **overall population**. Mathematically:
 
-\[
-\text{Disparity Index} = \frac{\text{Group Share of Low-Access Population}}{\text{Group Share of Total Population}}
-\]
+Disparity Index = <sup>Group Share of Low-Access Population</sup>&frasl;<sub>Group Share of Total Population</sub>
 
 - **DI > 1:** The group is disproportionately affected by low food access.  
 - **DI = 1:** The group is proportionally represented.  
@@ -99,10 +97,7 @@ For example, if a group comprises 10% of the total population but accounts for 2
 
 The disparity computation was implemented as follows:
 
-1. **Column Renaming:**  
-   The Atlas dataset contained a column for Hispanic populations, which was renamed for consistency with other tract-level demographic variables.
-
-2. **Disparity Calculation Function:**  
+1. **Disparity Calculation Function:**  
    A helper function was defined to compute the DI for each demographic group at various distance thresholds.  
 
    Key steps include:  
@@ -113,11 +108,13 @@ The disparity computation was implemented as follows:
    - Computing the DI as the ratio of low-access share to population share.  
    - Returning a sorted table with results across all groups.
 
-3. **Threshold Aggregation:**  
+2. **Threshold Aggregation:**  
    Disparities were calculated for multiple thresholds and combined into a single table. Results were separated into **urban thresholds** and **rural thresholds** for visualization purposes.
 
-4. **Visualization:**  
+3. **Visualization:**  
    Bar plots were used to display DI across demographic groups, with a reference line at DI = 1 to highlight proportional representation. This approach enabled easy comparison of disparities in urban versus rural contexts.  
+
+![Disparity Comparison]([https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/Predictive%20Models/Unknown.png](https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/Disparity%20/Graphs.png))
 
 #### **Key Findings**
 
