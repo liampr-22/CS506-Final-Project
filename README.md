@@ -68,6 +68,7 @@ Feature importance was determined using the internal scoring mechanism of the Ra
   <img src="https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/feature_selection/feature_importances_link1.png?raw=true" height="300" />
   <img src="https://github.com/liampr-22/CS506-Final-Project/blob/main/figures/feature_selection/feature_importances_link2.png?raw=true" height="300" />
 </div>
+
 ### Clustering
 - Singular Value Decomposition (SVD) was applied to USDA structural data to identify key predictors of food insecurity. Distinct clusters were not formed using this method, so we opted to use t-SNE, which did form distinct globular clusters better suited for forming organized groupings of county-level data.
 - Census tract-level data were processed using share-based metrics to avoid population bias and standardized for comparability.
