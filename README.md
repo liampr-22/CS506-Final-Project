@@ -1,6 +1,37 @@
-# CS506 Project — Food Insecurity & Chronic Disease (Midterm Report)
+# CS506 Project — Food Insecurity & Chronic Disease
 
-**YouTube Presentation:** https://youtu.be/0fJ-v1Nlck0?si=vP8s3prJR-9ptkD-
+**YouTube Presentation:** 
+
+## How to Build and Run the Code
+This project includes a Makefile, requirements.txt, and a lightweight test suite. All commands below assume you are in the project root.
+
+### Install Dependencies
+We provide a Makefile target that automatically creates a Python virtual environment and installs all required packages:
+```
+make install
+```
+This will:
+- Create a .venv directory
+- Install all Python dependencies from requirements.txt
+- Ensure the correct versions of libraries used in the notebook are available
+  
+### Run the Notebook as a Script
+To ensure fully reproducible results, the notebook is converted into a Python script (main.py) using nbconvert before execution.
+Run the full analysis with:
+```
+make run
+```
+This will:
+- Export FINAL_CODE.ipynb → main.py
+- Execute the script inside the virtual environment
+- Reproduce all figures, output tables, and printed model results
+
+### Run the Test Suite
+Run all tests with:
+```
+make test
+```
+This calls pytest inside the virtual environment and outputs a full test report.
 
 ## 1. Project summary
 The goal of this project is to examine how food access relates to food insecurity, and in turn how food insecurity is associated with adverse health outcomes:
