@@ -1,6 +1,6 @@
 # CS506 Project — Food Insecurity & Chronic Disease
 
-**YouTube Presentation:** 
+**YouTube Presentation:** https://youtu.be/68AAMnR1yEo
 
 ## How to Build and Run the Code
 This project includes a Makefile, requirements.txt, and a lightweight test suite. All commands below assume you are in the project root.
