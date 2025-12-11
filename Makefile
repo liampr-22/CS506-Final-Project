@@ -1,20 +1,19 @@
 PYTHON := python3
 VENV := .venv
-ACTIVATE := . $(VENV)/bin/activate
 
 install:
 	@test -d $(VENV) || $(PYTHON) -m venv $(VENV)
-	@$(ACTIVATE) && pip install --upgrade pip
-	@$(ACTIVATE) && pip install -r requirements.txt
+	@$(VENV)/bin/pip install --upgrade pip
+	@$(VENV)/bin/pip install -r requirements.txt
 
 export:
-	@$(ACTIVATE) && jupyter nbconvert --to script FINAL_CODE.ipynb --output main
+	jupyter nbconvert --to script FINAL_CODE.ipynb --output main
 
 run: export
-	@$(ACTIVATE) && $(PYTHON) main.py
+	$(PYTHON) main.py
 
 test: export
-	@$(ACTIVATE) && pytest -q
+	pytest -q
 
 clean:
 	rm -rf $(VENV)
